@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>SEARCH ZOOM</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="ITEM-PRODUCT-" transform="translate(-339.000000, -21.000000)" stroke="#333F48">
+            <g transform="translate(1.000000, 0.000000)" id="SEARCH-ZOOM">
+                <g transform="translate(339.000000, 22.000000)">
+                    <line x1="12" y1="13" x2="17" y2="18" id="Stroke-3"></line>
+                    <path d="M15,7.5 C15,11.6422848 11.641956,15 7.49976978,15 C3.35758357,15 0,11.6422848 0,7.5 C0,3.35771524 3.35758357,0 7.49976978,0 C11.641956,0 15,3.35771524 15,7.5 L15,7.5 Z" id="Stroke-5"></path>
+                    <line x1="7.5" y1="4" x2="7.5" y2="11" id="Stroke-3"></line>
+                    <line x1="11" y1="7.5" x2="4" y2="7.5" id="Stroke-3"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

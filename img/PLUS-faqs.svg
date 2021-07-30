@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>PLUS</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="FAQs" transform="translate(-1063.000000, -673.000000)" fill="#231F20" fill-rule="nonzero">
+            <g id="HEADER-SIDE" transform="translate(-3.000000, 107.000000)">
+                <g id="FAQS-QUESTION-" transform="translate(330.000000, 539.000000)">
+                    <g id="PLUS" transform="translate(736.000000, 27.000000)">
+                        <path d="M12.5,25 C12.2032004,25 11.9625967,24.7593705 11.9625967,24.462539 L11.9625967,13.0361174 L0.537403267,13.0361174 C0.240603638,13.0361174 0,12.7954879 0,12.4986563 C0,12.2018248 0.240603638,11.9611953 0.537403267,11.9611953 L11.9625967,11.9611953 L11.9625967,0.537461034 C11.9625967,0.240629501 12.2032004,0 12.5,0 C12.7967996,0 13.0374033,0.240629501 13.0374033,0.537461034 L13.0374033,11.9611953 L24.4625967,11.9611953 C24.7593964,11.9611953 25,12.2018248 25,12.4986563 C25,12.7954879 24.7593964,13.0361174 24.4625967,13.0361174 L13.0374033,13.0361174 L13.0374033,24.462539 C13.0374033,24.7593705 12.7967996,25 12.5,25 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="2px" viewBox="0 0 16 2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>MINUS</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CARRER" transform="translate(-1054.000000, -790.000000)" fill="#231F20" fill-rule="nonzero">
+            <g id="FAQS-QUESTION-OPEN" transform="translate(332.000000, 745.000000)">
+                <g id="MINUS" transform="translate(722.000000, 45.000000)">
+                    <path d="M7.65606191,1.34311512 L0.343938091,1.34311512 C0.153986329,1.34311512 0,1.18911224 0,0.999140062 C0,0.809167881 0.153986329,0.655165001 0.343938091,0.655165001 L7.65606191,0.655165001 L8.34393809,0.655165001 L15.6560619,0.655165001 C15.8460137,0.655165001 16,0.809167881 16,0.999140062 C16,1.18911224 15.8460137,1.34311512 15.6560619,1.34311512 L8.34393809,1.34311512 L7.65606191,1.34311512 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
