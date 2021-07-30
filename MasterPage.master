@@ -1,0 +1,595 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Shop_MasterPage" %>
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <title>NYWD - Shop</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500,600,700|Roboto:400,700&display=swap" rel="stylesheet" />
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#212939" />
+    <meta name="msapplication-TileColor" content="#212939" />
+    <meta name="theme-color" content="#212939" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/Custom.css" />
+    <script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <asp:ContentPlaceHolder ID="mainHead" runat="server">
+    </asp:ContentPlaceHolder>
+    <script>!window.jQuery && document.write('<script src="js/jquery-1.4.2.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/simple-scrollbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <style type="text/css">
+            .cart-price {<%=dopricestyle %>}
+    </style>
+
+    <!-- Hotjar Tracking Code for https://www.nywdinc.com -->
+
+    <script>
+
+        (function (h, o, t, j, a, r) {
+
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+
+            h._hjSettings = { hjid: 1702671, hjsv: 6 };
+
+            a = o.getElementsByTagName('head')[0];
+
+            r = o.createElement('script'); r.async = 1;
+
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+
+            a.appendChild(r);
+
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+       
+    </script>
+    <!-- Install this snippet AFTER the Hotjar tracking code. -->
+
+    <script>
+        var d = new Date();
+        var n = d.toISOString();
+        date = new Date(n);
+        var p = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate();
+
+        var userId = "<%=userName%>" || null; // Replace your_user_id with your own if available.
+
+        window.hj('identify', userId, {
+
+            // Add your own custom attributes here. Some EXAMPLES:
+
+            'Dated': p + "Z", // Signup date in ISO-8601 format.
+
+            'Company': "<%=companyname%>", // Send strings with quotes around them.
+
+            // 'Total purchases': 15, // Send numbers without quotes.
+
+            // 'Last purchase date': '2019-06-20Z', // Send dates in ISO-8601 format.
+
+            // 'Last refund date': null, // Send null when no value exists for a user.
+
+        });
+
+    </script>
+    <script type="text/javascript">
+        
+        $(document).ready(function () {
+            //if ($.cookie('Screenwidth') == null || $.cookie('Screenwidth') == "") {
+
+
+            $('.close-modalCustomkick').click(function (e) {
+                e.preventDefault();
+                //$('#modal-custom-kickoff').addClass('out');
+                //$('body').removeClass('modal-active');
+                logmeout();
+            });
+
+            $('.modalCustomkick').click(function (e) {
+                e.preventDefault();
+                //$('#modal-custom-kickoff').addClass('out');
+                //$('body').removeClass('modal-active');
+                logmeout();
+            });
+
+                var width = $(window).width();
+                $.cookie("Screenwidth", width);
+            
+                var input = document.getElementById("search_query_top");
+                input.addEventListener("keyup", function (event) {
+                    if (event.keyCode === 13) {
+
+                        event.preventDefault();
+
+                        var value = input ? input.value : 'defaultText';
+
+                        if (value != "") {
+                            window.location.href = 'keyword-' + escape(value.replace('&', '$').replace(/\//g, '!')+'-1-25');
+                        }
+                    }
+                });
+
+                input.addEventListener("keypress", function (event) {
+                    if (event.keyCode === 13) {
+
+                        event.preventDefault();
+
+                        var value = input ? input.value : 'defaultText';
+
+                        if (value != "") {
+                            window.location.href = 'keyword-' + escape(value.replace('&', '$').replace(/\//g, '!') + '-1-25');
+                        }
+                    }
+                });
+
+                input.addEventListener("keydown", function (event) {
+                    if (event.keyCode === 13) {
+
+                        event.preventDefault();
+
+                        var value = input ? input.value : 'defaultText';
+
+                        if (value != "") {
+                            window.location.href = 'keyword-' + escape(value.replace('&', '$').replace(/\//g, '!') + '-1-25');
+                        }
+                    }
+                });
+
+                var idleTime = 0;
+
+                var idleInterval = setInterval(timerIncrement, 600000); // 30000 = 1 min
+                var idleInterval2 = setInterval(dokickoff, 30000);
+
+            //      Zero the idle timer on mouse movement.
+                $(this).mousemove(function (e) {
+                    //    alert("mouse moved");
+                    idleTime = 0;
+                });
+                $(this).keypress(function (e) {
+                    //     alert("key pressed");
+                    idleTime = 0;
+                });
+
+
+        })
+
+        function timerIncrement() {
+            idleTime = idleTime + 1;
+            if (idleTime > 1) { // 1 minute
+                //         window.location.reload();
+                //    alert("done");
+                document.getElementById("<%=lnkLogout.ClientID %>").click();
+            }
+        }
+
+        function setCookie() {
+            $.post('Ajax_temp.aspx', { ch: 20, accept: "1" }, function (data) {
+                if (data == "success") {
+                    $.cookie("Accept", "1");
+                }
+                else {
+                    $.cookie("Accept", "0");
+                }
+            })
+        }
+        function logmeout() {
+            var evt = document.createEvent("HTMLEvents");
+            evt.initEvent("click", true, true);
+            document.getElementById("<%=lnkLogout.ClientID %>").dispatchEvent(evt);
+              document.getElementById("<%=lnkLogout.ClientID %>").click();
+          }
+
+        function dokickoff() {
+            $.post('Ajax_temp.aspx', { ch: 7 }, function (data) {
+                if (data != "") {
+                    $('#modal-custom-kickoff').removeAttr('class').addClass('open-modal');
+                    //alert(data);
+                    //logmeout();
+                }
+            })
+        }
+
+
+        function RedirectToSecondPage() {
+
+            var input = document.getElementById('search_query_top');
+            var value = input ? input.value : 'defaultText';
+
+            if (value != "") {
+                window.location.href = 'keyword-' + escape(value.replace('&', '$').replace(/\//g, '!') + '-1-25');
+            }
+        }
+
+        function pageload(key) {
+            document.getElementById('search_query_top').value = key;
+        }
+
+    </script>
+</head>
+
+<!-- !Body -->
+<body class="loading" oncontextmenu="return true;">
+    <%--oncontextmenu="return false;"--%>
+     <form id="form1" runat="server" autocomplete="off">
+    <div class="overflow-menu"></div>
+    <div class="web-term" runat="server" id="divweb">
+        <div class="web-term-main">
+            <div class="web-term-text">
+                <h3><asp:Label ID="Label1" runat="server" Text="<% $Resources:Resources, websiteTerms %>"></asp:Label></h3>
+                <p style="text-align:justify"><asp:Label ID="Label2" runat="server" Text="<% $Resources:Resources, Terms1 %>"></asp:Label></p>
+                <p style="text-align:justify"><asp:Label ID="Label3" runat="server" Text="<% $Resources:Resources, Terms2 %>"></asp:Label></p>
+                <p style="text-align:justify"><asp:Label ID="Label4" runat="server" Text="<% $Resources:Resources, Terms3 %>"></asp:Label></p>
+                <p style="text-align:justify"><asp:Label ID="Label5" runat="server" Text="<% $Resources:Resources, Terms4 %>"></asp:Label></p>
+                <p style="text-align:justify"><asp:Label ID="Label6" runat="server" Text="<% $Resources:Resources, Terms5 %>"></asp:Label></p>
+                <p style="text-align:justify"><asp:Label ID="Label7" runat="server" Text="<% $Resources:Resources, Terms6 %>"></asp:Label></p>
+                <h3><asp:Label ID="Label8" runat="server" Text="<% $Resources:Resources, mobile %>"></asp:Label></h3>
+                <h4><asp:Label ID="Label9" runat="server" Text="<% $Resources:Resources, license %>"></asp:Label></h4>
+                <p style="text-align:justify"><asp:Label ID="Label10" runat="server" Text="<% $Resources:Resources, Terms7 %>"></asp:Label></p>
+                <h4><asp:Label ID="Label11" runat="server" Text="<% $Resources:Resources, device %>"></asp:Label></h4>
+                <p style="text-align:justify"><asp:Label ID="Label12" runat="server" Text="<% $Resources:Resources, Terms8 %>"></asp:Label></p>
+
+                <h3><asp:Label ID="Label13" runat="server" Text="<% $Resources:Resources, SUBMISSIONS %>"></asp:Label></h3>
+                <p style="text-align:justify"><asp:Label ID="Label14" runat="server" Text="<% $Resources:Resources, Terms9 %>"></asp:Label></p>
+
+                <p style="text-align:justify"><asp:Label ID="Label15" runat="server" Text="<% $Resources:Resources, Terms10 %>"></asp:Label></p>
+
+                <h3><asp:Label ID="Label16" runat="server" Text="<% $Resources:Resources, PROHIBITEDACTIVITIES %>"></asp:Label></h3>
+                <p style="text-align:justify"><asp:Label ID="Label17" runat="server" Text="<% $Resources:Resources, Terms11 %>"></asp:Label></p>
+                <p style="text-align:justify">
+                    <asp:Label ID="Label18" runat="server" Text="<% $Resources:Resources, Terms12 %>"></asp:Label>
+
+                </p>
+                <h3><asp:Label ID="Label19" runat="server" Text="<% $Resources:Resources, Rights %>"></asp:Label></h3>
+                <p style="text-align:justify"><asp:Label ID="Label20" runat="server" Text="<% $Resources:Resources, Terms13 %>"></asp:Label></p>
+
+                <p style="text-align:justify"><asp:Label ID="Label21" runat="server" Text="<% $Resources:Resources, Terms14 %>"></asp:Label></p>
+
+                <p style="text-align:justify"><asp:Label ID="Label22" runat="server" Text="<% $Resources:Resources, Terms15 %>"></asp:Label></p>
+
+                <p style="text-align:justify"><asp:Label ID="Label23" runat="server" Text="<% $Resources:Resources, Terms16 %>"></asp:Label></p>
+
+                <p style="text-align:justify"><asp:Label ID="Label24" runat="server" Text="<% $Resources:Resources, Terms17 %>"></asp:Label></p>
+                <p style="text-align:justify"><asp:Label ID="Label25" runat="server" Text="<% $Resources:Resources, Terms18 %>"></asp:Label></p>
+                <p style="text-align:justify"><asp:Label ID="Label26" runat="server" Text="<% $Resources:Resources, Terms19 %>"></asp:Label></p>
+                <ul>
+                    <li><asp:Label ID="Label27" runat="server" Text="<% $Resources:Resources, li1 %>"></asp:Label></li>
+                    <li><asp:Label ID="Label28" runat="server" Text="<% $Resources:Resources, li2 %>"></asp:Label></li>
+                </ul>
+
+                <p style="text-align:justify">
+                  <asp:Label ID="Label29" runat="server" Text="<% $Resources:Resources, address %>"></asp:Label>
+                </p>
+
+
+                <h3><asp:Label ID="Label30" runat="server" Text="<% $Resources:Resources, thirdparty %>"></asp:Label></h3>
+                <p style="text-align:justify"><asp:Label ID="Label31" runat="server" Text="<% $Resources:Resources, Terms20 %>"></asp:Label></p>
+
+                <h3><asp:Label ID="Label32" runat="server" Text="<% $Resources:Resources, SITEMANAGEMENT %>"></asp:Label></h3>
+                <p style="text-align:justify">
+                    <asp:Label ID="Label33" runat="server" Text="<% $Resources:Resources, Terms21 %>"></asp:Label>
+                </p>
+                <h3><asp:Label ID="Label34" runat="server" Text="<% $Resources:Resources, TERMANDTERMINATION %>"></asp:Label></h3>
+                <p style="text-align:justify"><asp:Label ID="Label35" runat="server" Text="<% $Resources:Resources, Terms22 %>"></asp:Label></p>
+                <p style="text-align:justify"><asp:Label ID="Label36" runat="server" Text="<% $Resources:Resources, Terms23 %>"></asp:Label></p>
+                <p style="text-align:justify"><asp:Label ID="Label37" runat="server" Text="<% $Resources:Resources, Terms24 %>"></asp:Label></p>
+
+                <p style="text-align:justify"><asp:Label ID="Label38" runat="server" Text="<% $Resources:Resources, Terms25 %>"></asp:Label></p>
+
+                <p style="text-align:justify"><asp:Label ID="Label39" runat="server" Text="<% $Resources:Resources, Terms26 %>"></asp:Label></p>
+                <p style="text-align:justify"><asp:Label ID="Label40" runat="server" Text="<% $Resources:Resources, Terms27 %>"></asp:Label></p>
+
+                <h3><asp:Label ID="Label41" runat="server" Text="<% $Resources:Resources, MODIFICATIONS %>"></asp:Label></h3>
+                <h4><asp:Label ID="Label42" runat="server" Text="<% $Resources:Resources, ToAgreement %>"></asp:Label></h4>
+                <p style="text-align:justify"><asp:Label ID="Label43" runat="server" Text="<% $Resources:Resources, Terms28 %>"></asp:Label></p>
+
+                <h4><asp:Label ID="Label44" runat="server" Text="<% $Resources:Resources, ToServices %>"></asp:Label></h4>
+                <p style="text-align:justify"><asp:Label ID="Label45" runat="server" Text="<% $Resources:Resources, Terms29 %>"></asp:Label></p>
+
+                <h3><asp:Label ID="Label46" runat="server" Text="<% $Resources:Resources, DISPUTES %>"></asp:Label></h3>
+                <h4><asp:Label ID="Label47" runat="server" Text="<% $Resources:Resources, BetweenUsers %>"></asp:Label></h4>
+                <p style="text-align:justify"><asp:Label ID="Label48" runat="server" Text="<% $Resources:Resources, Terms30 %>"></asp:Label></p>
+
+                <h4><asp:Label ID="Label49" runat="server" Text="<% $Resources:Resources, WithCompany %>"></asp:Label></h4>
+                <p style="text-align:justify"><asp:Label ID="Label50" runat="server" Text="<% $Resources:Resources, Terms31 %>"></asp:Label></p>
+                <p style="text-align:justify"><asp:Label ID="Label51" runat="server" Text="<% $Resources:Resources, Terms32 %>"></asp:Label></p>
+                <p style="text-align:justify"><asp:Label ID="Label52" runat="server" Text="<% $Resources:Resources, Terms33 %>"></asp:Label></p>
+                <p style="text-align:justify">
+                    <asp:Label ID="Label53" runat="server" Text="<% $Resources:Resources, Terms34 %>"></asp:Label>
+                </p>
+                <p style="text-align:justify"><asp:Label ID="Label54" runat="server" Text="<% $Resources:Resources, Terms35 %>"></asp:Label></p>
+
+                <p style="text-align:justify"><asp:Label ID="Label55" runat="server" Text="<% $Resources:Resources, Terms36 %>"></asp:Label></p>
+
+                <h3><asp:Label ID="Label58" runat="server" Text="<% $Resources:Resources, CORRECTIONS %>"></asp:Label></h3>
+                <p style="text-align:justify"><asp:Label ID="Label56" runat="server" Text="<% $Resources:Resources, Terms37 %>"></asp:Label></p>
+
+                <h3><asp:Label ID="Label59" runat="server" Text="<% $Resources:Resources, DISCLAIMERS %>"></asp:Label></h3>
+                <p style="text-align:justify"><asp:Label ID="Label57" runat="server" Text="<% $Resources:Resources, Terms38 %>"></asp:Label></p>
+                <p style="text-align:justify"><asp:Label ID="Label60" runat="server" Text="<% $Resources:Resources, Terms39 %>"></asp:Label></p>
+
+                <h3><asp:Label ID="Label61" runat="server" Text="<% $Resources:Resources, LIMITATIONSOFLIABILITY %>"></asp:Label></h3>
+                <p style="text-align:justify"><asp:Label ID="Label62" runat="server" Text="<% $Resources:Resources, Terms40 %>"></asp:Label></p>
+                <p style="text-align:justify"><asp:Label ID="Label63" runat="server" Text="<% $Resources:Resources, Terms41 %>"></asp:Label></p>
+                <p style="text-align:justify"><asp:Label ID="Label64" runat="server" Text="<% $Resources:Resources, Terms42 %>"></asp:Label></p>
+
+                <h3><asp:Label ID="Label65" runat="server" Text="<% $Resources:Resources, INDEMNITY %>"></asp:Label></h3>
+                <p style="text-align:justify"><asp:Label ID="Label66" runat="server" Text="<% $Resources:Resources, Terms43 %>"></asp:Label></p>
+
+                <h3><asp:Label ID="Label67" runat="server" Text="<% $Resources:Resources, NOTICES %>"></asp:Label></h3>
+                <p style="text-align:justify"><asp:Label ID="Label68" runat="server" Text="<% $Resources:Resources, Terms44 %>"></asp:Label></p>
+
+                <h3><asp:Label ID="Label69" runat="server" Text="<% $Resources:Resources, USERDATA %>"></asp:Label></h3>
+                <p style="text-align:justify"><asp:Label ID="Label70" runat="server" Text="<% $Resources:Resources, Terms45 %>"></asp:Label></p>
+
+                <h3><asp:Label ID="Label71" runat="server" Text="<% $Resources:Resources, ELECTRONICCONTRACTING %>"></asp:Label>
+</h3>
+                <p style="text-align:justify"><asp:Label ID="Label72" runat="server" Text="<% $Resources:Resources, Terms46 %>"></asp:Label></p>
+
+                <h3><asp:Label ID="Label73" runat="server" Text="<% $Resources:Resources, ELECTRONICSIGNATURES %>"></asp:Label></h3>
+                <p style="text-align:justify"><asp:Label ID="Label74" runat="server" Text="<% $Resources:Resources, Terms47 %>"></asp:Label></p>
+
+                <h3><asp:Label ID="Label75" runat="server" Text="<% $Resources:Resources, MISCELLANEOUS %>"></asp:Label></h3>
+                <p style="text-align:justify"><asp:Label ID="Label76" runat="server" Text="<% $Resources:Resources, Terms48 %>"></asp:Label></p>
+
+                <h3><asp:Label ID="Label77" runat="server" Text="<% $Resources:Resources, CONTACTUS %>"></asp:Label></h3>
+                <p style="text-align:justify"><asp:Label ID="Label78" runat="server" Text="<% $Resources:Resources, Terms49 %>"></asp:Label></p>
+                <p style="text-align:justify"><asp:Label ID="Label79" runat="server" Text="<% $Resources:Resources, Terms50 %>"></asp:Label></p>
+                <p>©2020 NYWD, Inc. <asp:Label ID="Label80" runat="server" Text="<% $Resources:Resources, allrightsreserved %>"></asp:Label></p>
+
+                <div class="buttons"><a href="0#" onclick="setCookie()" class="btn agree"><asp:Label ID="Label81" runat="server" Text="<% $Resources:Resources, Accept %>"></asp:Label></a><a href="#" onclick="logmeout()" class="btn empty agree"><asp:Label ID="Label82" runat="server" Text="<% $Resources:Resources, Decline %>"></asp:Label></a></div>
+            </div>
+        </div>
+    </div>
+    <nav class="nav-shop">
+        <div class="logo">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a class="brand" href="home">
+                <img src="img/nywd-brands.svg" alt="nywd-brands" /></a>
+        </div>
+
+        <ul class="menu-shop">
+            <li><a href="home"  runat="server" id="lihome"><asp:Label ID="Label83" runat="server" Text="<% $Resources:Resources, Home %>"></asp:Label></a></li>
+<%--             <li  id="linew"  style="display:none"><a href="0-New%20Stock-1-25-Arrival"><asp:Label ID="Label94" runat="server" Text="<% $Resources:Resources, NewArrivals %>"></asp:Label></a></li>--%>
+             <li class="sub-menu mega-sub" >
+                <a href="#0"><span id="ctl00_Label94">Shop</span></a>
+                <ul class="mega-menu">
+                   <li>
+                      <div class="main-megamenu">
+                         <div class="list-featured">
+                            <h4><asp:Label ID="Label93" runat="server" Text="<% $Resources:Resources, Featured %>"></asp:Label></h4>
+                            <ul>
+                               <li><a href="javascript:void(0)" onclick="document.location.href='0-New%20Stock-1-25-Arrival';"><asp:Label ID="Label94" runat="server" Text="<% $Resources:Resources, NewArrivals %>"></asp:Label></a></li>
+                               <li><a href="javascript:void(0)" onclick="document.location.href='0-Bestsellers-1-25-Bestsellers';"><asp:Label ID="Label96" runat="server" Text="<% $Resources:Resources, BestSeller %>"></asp:Label></a></li>
+                               <li><a href="javascript:void(0)" onclick="document.location.href='Clearance-Sale-0-1-25';">Sale</a></li>
+                            </ul>
+                         </div>
+                         <div class="list-featured">
+                             <h4>CATEGORIES </h4>
+                             <ul>
+                                <li><a href="javascript:void(0)" onclick="document.location.href='all-Optical-0-2-1-2-0-25'"><asp:Label ID="Label97" runat="server" Text="<% $Resources:Resources, Opticals %>"></asp:Label></a></li>
+                                <li><a href="javascript:void(0)" onclick="document.location.href='all-Sunglasses-0-1-1-1-0-25'">Sun</a></li>
+                                <li><a href="javascript:void(0)" onclick="document.location.href='0-Bestselling-1-25-Men';"><asp:Label ID="Label99" runat="server" Text="<% $Resources:Resources, men %>"></asp:Label></a></li>
+                                <li><a href="javascript:void(0)" onclick="document.location.href='0-Bestselling-1-25-Women';"><asp:Label ID="Label102" runat="server" Text="<% $Resources:Resources, women %>"></asp:Label></a></li>
+                             </ul>
+                          </div>
+                          <div class="banner-menu">
+                             <div class="item--banner-menu ">
+                                <a href="javascript:void(0)" onclick="document.location.href='0-New%20Stock-1-25-Arrival';">
+                                   <figure>
+                                      <img src="./img/banner-newarrivals-menu.png" />
+                                      <figcaption>
+                                         <h4><asp:Label ID="Label103" runat="server" Text="<% $Resources:Resources, NewArrivals %>"></asp:Label></h4>
+                                      </figcaption>
+                                   </figure>
+                                </a>
+                             </div>
+                             <div class="item--banner-menu ">
+                                  <a href="javascript:void(0)" onclick="document.location.href='0-Bestsellers-1-25-Bestsellers';">
+                                     <figure>
+                                        <img src="./img/banner-best-menu.jpg" />
+                                        <figcaption>
+                                           <h4>Best Sellers</h4>
+                                        </figcaption>
+                                     </figure>
+                                  </a>
+                               </div>
+                               <div class="item--banner-menu ">
+                                    <a href="javascript:void(0)" onclick="document.location.href='all-Sunglasses-0-1-1-1-0-25'">
+                                       <figure>
+                                          <img src="./img/banner-sun-menu.jpg" />
+                                          <figcaption>
+                                             <h4>Sun</h4>
+                                          </figcaption>
+                                       </figure>
+                                    </a>
+                                 </div>
+                                 <div class="item--banner-menu ">
+                                      <a href="javascript:void(0)" onclick="document.location.href='all-Optical-0-2-1-2-0-25'">
+                                         <figure>
+                                            <img src="./img/banner-optical-menu.jpg" />
+                                            <figcaption>
+                                               <h4>Optical</h4>
+                                            </figcaption>
+                                         </figure>
+                                      </a>
+                                   </div>
+                          </div>
+                      </div>
+                   </li>
+                </ul>
+             </li>
+
+            <%--class="active"--%>
+            <li class="sub-menu sub-brands"><a href="#0" runat="server" id="librand"><asp:Label ID="Label84" runat="server" Text="<% $Resources:Resources, Brands %>"></asp:Label></a>
+
+                <ul>
+                    <li class="title-sub-menu"><asp:Label ID="Label85" runat="server" Text="<% $Resources:Resources, AllFrames %>"></asp:Label> <span class="close-sub-menu">
+                        <img src="img/Close-cart.svg" alt="Close-cart"></span></li>
+
+                    <asp:Literal runat="server" ID="ltlBrandlist"></asp:Literal>
+
+                </ul>
+            </li>
+            <li id="lisale" style="display:none"><a href="Clearance-sale-0-1-25"><asp:Label ID="Label95" runat="server" Text="<% $Resources:Resources, Sale %>"></asp:Label></a></li>
+              <li runat="server" id="li1"><a href="AdvanceSearch" id="lisearch" runat="server"><asp:label runat="server" id="Label98" Text="<% $Resources:Resources, Search %>"></asp:label></a></li>
+            <li runat="server" id="lihelp"><a href="help"  ><asp:Label ID="Label86" runat="server" Text="<% $Resources:Resources, NeedHelp %>"></asp:Label></a></li>
+            <li id="Create" runat="server" style="display: none"><a href="create-account" runat="server" id="liaccount" ><asp:Label ID="Label87" runat="server" Text="<% $Resources:Resources, CreateAccount %>"></asp:Label></a></li>
+        </ul>
+        <div class="widget-menu">
+           <div class="language">
+						   <asp:DropDownList runat="server" ID="ddlanguage" OnSelectedIndexChanged="ddlanguage_SelectedIndexChanged" AutoPostBack = "true" class="dropdown">
+        <asp:ListItem Text="en" Selected="True">en</asp:ListItem>
+        <asp:ListItem Text="es">es</asp:ListItem>
+        </asp:DropDownList>
+                              </div> 
+
+              <%--<div class="search-link">
+				 <a href="AdvanceSearch"></a>
+				  
+				</div>--%>
+
+            	 <div class="search-system" id="divSearch" runat="server">
+                <a href="#0"></a>
+            </div>
+            <div class="search-main">
+                <input type="search" class="search-box" placeholder="Search Products" id="search_query_top" onfocus="$(this).select()" />
+
+            </div>
+
+            <div class='cart icon-basket' id="divCart" runat="server">
+
+                <a href="Cart">
+                    <asp:Label ID="lblcartcount" CssClass="number" runat="server"></asp:Label>
+                    <em><asp:Label ID="Label88" style="height: auto; margin-right: auto; font-size: inherit; position: inherit; font-weight: 100; " runat="server" Text="<% $Resources:Resources, Items %>"></asp:Label> </em></a>
+
+            </div>
+
+            <div class="account" id="divAccount" runat="server">
+                <a class="account-l" href="myaccount">
+                    <span><asp:Label ID="Label89" runat="server" Text="<% $Resources:Resources, Welcome %>"></asp:Label>
+                    <asp:Literal runat="server" ID="ltluser">
+				  		<br /><br />
+                         
+				  			<em>[cname]</em>
+				  		
+                                 </asp:Literal>
+                        </span>
+                </a>
+                <ul class="list-account">
+                    <li> <a href="ReviewDailyOrder" id="reviewaccount" runat="server" style="display:none;line-height:1.2;height:60px;padding-top:20px"><%=reviewdailyorder %></a></li>
+                     <li> <a href="ReviewWeeklyOrder-0" id="reviewweeklyaccount" runat="server" style="display:none;line-height:1.2;height:60px;padding-top:20px"><%=reviewweeklyorder %></a></li>
+                     <li><a href='<% Response.Write(pageUrl);%>' id="myacount"><%=myaccount %></a></li>
+                    <li id="st120" runat="server"><a href="ST120"><%=st120report%></a></li>
+                    <li><a href="#" onclick="logmeout()"><%=logout %></a></li>
+                </ul>
+                <%--<a href="myaccount.aspx">
+                          <asp:Literal runat="server" ID="ltluser">
+				  		<span>Welcome<br />
+				  			<em>[cname]</em>
+				  		</span>
+                              </asp:Literal>
+			  		</a>--%>
+            </div>
+
+            <a href="home" id="cntShop" style="display: none" runat="server" class="continue-shop btn empty"><asp:label runat="server" id="Label90" Text="<% $Resources:Resources, ContinueShopping %>"></asp:label></a>
+        </div>
+    </nav>
+
+
+
+   <%-- <form id="form1" runat="server">--%>
+        <asp:LinkButton ID="lnkLogout" runat="server" OnClick="lnkLogout_Click"></asp:LinkButton>
+        <div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+           <!-- MODAL -->
+		<div id="modal-custom-kickoff">
+			<div class="modal-background">
+				<a href="#0" class="close-modalCustomkick"><img src="img/close-modal.svg" alt="close-modal" ></a>
+		    	<div class="modal modal-delete-card">
+			    	<h3><asp:Label ID="Label100" runat="server" Text="<% $Resources:Resources, LOGGEDOUT %>"></asp:Label></h3>
+			    	<p><asp:Label ID="Label101" runat="server" Text="<% $Resources:Resources, logouttext %>"></asp:Label> </p>
+			    	
+			    	<%--<a href="Cart.aspx" class="btn">--%>
+                     <a href="" class="btn modalCustomkick">OK</a>
+		    	</div>
+		  	</div>
+		</div><!-- /MODAL -->
+
+            <footer>
+                <div class="main-footer">
+                    <img src="img/nywd-brands-footer.svg" alt="nywd-brands-footer">
+                    <address>
+                        2090 Flatbush Avenue, Brooklyn, NY 11234.<br />
+                        718-684-9955 - support@nywdinc.com
+                    </address>
+                </div>
+                <a href="#0" class="scrollToTop">
+                    <img src="img/up-icon.svg" alt="up-icon"></a>
+                <p class="copy">
+                    Copyrights © 2001 - <span id="endYear"></span> NYWD, INC. <asp:Label ID="Label92" runat="server" Text="<% $Resources:Resources, Allrightsreserved %>"></asp:Label>. - 
+			
+                    <a href="#" onclick="window.open('privacy','_blank')"><asp:Label ID="Label91" runat="server" Text="<% $Resources:Resources, PrivacyPolicy %>"></asp:Label></a>
+                </p>
+            </footer>
+        </div>
+    </form>
+    <asp:ContentPlaceHolder ID="Modal" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- !Javascript - at the bottom for fast page loading -->
+    <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+     <script>
+         var width = $(window).width();
+         if (width <= 1200) {
+             $("#linew").removeAttr("Style");
+             $("#lisale").removeAttr("Style");
+         }
+
+	 </script>
+    <asp:ContentPlaceHolder ID="foot" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="js/main.js"></script>
+</body>
+</html>
