@@ -1,0 +1,1018 @@
+﻿
+ #modal-container2.three .modal-background .modal form,
+  #modal-container2.three2 .modal-background .modal.modal-address form,
+  #modal-container3.three .modal-background .modal form,
+   #modal-container2 .modal-background .modal .newform,
+   #modal-container3 .modal-background .modal .newform,
+ #modal-custom-container32 .modal-background .modal .newform,
+  #modal-container3 .modal-background .modal.modal-address form
+  {
+    width: 90%;
+    padding: 20px;
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto; }
+    @media only screen and (max-width: 44em) {
+      #modal-container2.three .modal-background .modal form,
+      #modal-container2.three2 .modal-background .modal.modal-address form,
+      #modal-container3.three .modal-background .modal form,
+	  #modal-container3 .modal-background .modal.modal-address form
+	  {
+        padding: 10px; } }
+    #modal-container2.three .modal-background .modal form input, 
+	#modal-container2.three .modal-background .modal form select,
+    #modal-container2.three2 .modal-background .modal.modal-address form input,
+    #modal-container2.three2 .modal-background .modal.modal-address form select,
+    #modal-container3.three .modal-background .modal form input,
+	#modal-container3.three .modal-background .modal form select,
+	#modal-container2 .modal-background .modal .newform input,
+    #modal-container2 .modal-background .modal .newform select,
+    #modal-container3 .modal-background .modal .newform input,
+	#modal-container3 .modal-background .modal .newform select,
+    #modal-custom-container32 .modal-background .modal .newform input,
+    #modal-custom-container32 .modal-background .modal .newform select,
+
+	#modal-container3 .modal-background .modal.modal-address form input,
+	#modal-container3 .modal-background .modal.modal-address form select
+	{
+      font-family: "EB Garamond", serif;
+      border: 1px solid #333F48;
+      color: #333F48;
+      border-radius: 8px;
+      padding: 0 10px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 1.6rem;
+      display: inline-block;
+      width: 96%;
+      margin: 8px 5px; }
+      #modal-container2.three .modal-background .modal form input.half, 
+	  #modal-container2.three .modal-background .modal form select.half,
+      #modal-container2.three2 .modal-background .modal.modal-address form input.half,
+      #modal-container2.three2 .modal-background .modal.modal-address form select.half,
+      #modal-container2 .modal-background .modal .newform input.half,
+      #modal-container2 .modal-background .modal .newform select.half,
+      #modal-container3 .modal-background .modal .newform input.half,
+      #modal-container3 .modal-background .modal .newform select.half,
+      #modal-custom-container32 .modal-background .modal .newform input.half,
+      #modal-custom-container32 .modal-background .modal .newform select.half,
+
+      #modal-container3.three .modal-background .modal form input.half,
+      #modal-container3.three .modal-background .modal form select.half,
+      #modal-container3 .modal-background .modal.modal-address form input.half,
+      #modal-container3 .modal-background .modal.modal-address form select.half
+	  {
+        width: 47%; 
+      }
+        @media only screen and (max-width: 44em) {
+          #modal-container2.three .modal-background .modal form input.half, #modal-container2.three .modal-background .modal form select.half,
+          #modal-container2.three2 .modal-background .modal.modal-address form input.half,
+          #modal-container2.three2 .modal-background .modal.modal-address form select.half,
+          #modal-container3.three .modal-background .modal form input.half,
+          #modal-container3.three .modal-background .modal form select.half,
+          #modal-container3 .modal-background .modal.modal-address form input.half,
+          #modal-container3 .modal-background .modal.modal-address form select.half 
+		  {
+            width: 100%; } }
+      #modal-container2.three .modal-background .modal form input.btn, 
+	  #modal-container2.three .modal-background .modal form select.btn,
+      #modal-container2.three2 .modal-background .modal.modal-address form input.btn,
+      #modal-container2.three2 .modal-background .modal.modal-address form select.btn,
+      #modal-container3.three .modal-background .modal form input.btn,
+      #modal-container3.three .modal-background .modal form select.btn,
+	  #modal-container2 .modal-background .modal .newform input.btn,
+      #modal-container3 .modal-background .modal .newform input.btn,
+      #modal-custom-container32 .modal-background .modal .newform input.btn,
+      #modal-container3 .modal-background .modal.modal-address form input.btn,
+      #modal-container3 .modal-background .modal.modal-address form select.btn 
+	  {
+        width: 50%;
+        margin: 10px auto;
+        color: #fff; }
+
+.breadcrumb-cont {
+    width: inherit !important;
+}
+
+.main-list-shop .list-product-content .header-list-product .select-items {
+    width: 170px !important;
+}
+
+.main-list-shop .list-product-content .header-list-product .selects-filter {
+    width: 340px !important;
+}
+
+.main-list-shop .list-shop-filter .filter-cont {
+ padding: 0px 0 10px 0 !important;
+}
+
+.list-advanced-search {
+ padding: 0px 10px 0px 20px !important;
+}
+
+/*@media only screen and (max-width: 44em)
+{ 
+    .main-shop-home .banner-shop.new-arrival .block-text-banner {
+left: 71% !important;
+}*/
+
+.main-shop-home .banner-shop h3 {
+    font-size: 3.8rem !important;
+    }
+
+.modal__title {
+    font-size: 2.4rem !important;
+    line-height: 32px !important;
+}
+
+.modal__description {
+    font-size: 1.6rem !important;
+}
+
+.nav-shop1 {
+    width: 100%;
+    height: 100px;
+    padding: 0 8px;
+    background-color: #f3f3f3;
+    line-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9999;
+    /* max-width: 1400px; */
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+.nav-shop1 ul.menu-shop1 li.sub-menu1 > ul li a {
+    font-family: "EB Garamond", serif;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-left: 20px;
+    transition: opacity 0.2s;
+}
+
+.nav-shop1 ul.menu-shop1 li.sub-menu1 > ul li ul li {
+    width: 100%;
+        border-bottom: 1px solid #ccc;
+    line-height: 37px;
+    margin: 0;
+    display: inline-block;
+}
+
+.nav-shop1 ul.menu-shop1 li.sub-menu1 > ul li ul {
+    border-right: 1px solid #ccc;
+}
+
+.nav-shop1 ul.menu-shop1 li.sub-menu1 > ul li {
+    width: 20%;
+    border-bottom: 1px solid #ccc;
+    line-height: 37px;
+    margin: 0;
+    display: inline-block;
+}
+
+.nav-shop1 ul.menu-shop1 li.sub-menu1 ul.open-submenu1 {
+    visibility: visible;
+    opacity: 1;
+    top: 90px;
+}
+
+.nav-shop1 ul.menu-shop1 li.sub-menu1 > ul {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    background-color: #FAFAF8;
+    border-radius: 10px;
+    left: 0vw;
+    box-shadow: 0 9.7px 6.1px rgb(0 0 0 / 5%), 0 19px 19.1px rgb(0 0 0 / 7%), 0 28.7px 44.8px rgb(0 0 0 / 7%), 0 43px 100.3px rgb(0 0 0 / 10%), 0 101px 199px rgb(0 0 0 / 14%);
+    overflow: hidden;
+    transition: all 0.2s;
+    z-index: 9;
+}
+
+.nav-shop1 ul.menu-shop1 li {
+    display: inline-block;
+}
+
+      /* CREATE  ACCOUNT  //change #form_ccount to .form_account on 17th feb
+--------------------------------------------------------------*/
+/*.form_account.form-nywd {
+  max-width: 900px; }
+  @media only screen and (max-width: 56.25em) {
+    .form_account.form-nywd {
+      max-width: 650px; } }
+  .form_account.form-nywd div {
+    margin: 1.5% 1%; }
+    @media only screen and (max-width: 44em) {
+      .form_account.form-nywd div {
+        margin: 0 1% 20px 1%; } }
+    .form_account.form-nywd div .radio {
+      margin: 16px 0;
+      display: block;
+      cursor: pointer;
+      padding-left: 2px;
+      position: relative;
+      margin-right: 20px; }
+      .form_account.form-nywd div .radio span.name-radio {
+        position: relative;
+        top: 0px; }
+      .form_account.form-nywd div .radio input {
+        display: none; }
+        .form_account.form-nywd div .radio input + span {
+          line-height: 20px;
+          height: 20px;
+          padding-left: 20px;
+          display: block;
+          position: relative;
+          font-size: 1.4rem; }
+          .form_account.form-nywd div .radio input + span:not(:empty) {
+            padding-left: 28px; }
+          .form_account.form-nywd div .radio input + span:before, .form_account.form-nywd div .radio input + span:after {
+            content: '';
+            width: 20px;
+            height: 20px;
+            display: block;
+            border-radius: 50%;
+            left: 0;
+            top: 0;
+            position: absolute; }
+          .form_account.form-nywd div .radio input + span:before {
+            background: #333F48;
+            transition: background 0.2s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2); }
+          .form_account.form-nywd div .radio input + span:after {
+            background: #fff;
+            transform: scale(0.78);
+            transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4); }
+        .form_account.form-nywd div .radio input:checked + span:before {
+          transform: scale(1.04);
+          background: #333F48; }
+        .form_account.form-nywd div .radio input:checked + span:after {
+          transform: scale(0.4);
+          transition: transform .3s ease; }
+      .form_account.form-nywd div .radio:hover input + span:before {
+        transform: scale(0.92); }
+      .form_account.form-nywd div .radio:hover input + span:after {
+        transform: scale(0.74); }
+      .form_account.form-nywd div .radio:hover input:checked + span:after {
+        transform: scale(0.4); }
+  .form_account.form-nywd div.third {
+    width: 31%; }
+    @media only screen and (max-width: 44em) {
+      .form_account.form-nywd div.third {
+        width: 100%; } }
+    .form_account.form-nywd div.third h4 {
+      width: 100%;
+      text-transform: uppercase;
+      font-family: "Roboto", sans-serif;
+      margin-bottom: 5px;
+      margin-top: 20px; }
+    .form_account.form-nywd div.third .radio {
+      display: inline-block;
+      width: auto; }
+  .form_account.form-nywd div.fourth {
+    width: 22.8%; }
+    @media only screen and (max-width: 44em) {
+      .form_account.form-nywd div.fourth {
+        width: 100%; } }
+  .form_account.form-nywd div.half {
+    width: 47.5%; }
+    @media only screen and (max-width: 44em) {
+      .form_account.form-nywd div.half {
+        width: 100%; } }
+  .form_account.form-nywd div.full {
+    display: flex;
+    flex-wrap: wrap; }
+    .form_account.form-nywd div.full h4, .form_account.form-nywd div.full h3 {
+      width: 100%;
+      text-transform: uppercase;
+      font-family: "Roboto", sans-serif;
+      margin-bottom: 5px;
+      margin-top: 20px; }*/
+
+
+    .form_account.form-nywd {
+  max-width: 900px; }
+  @media only screen and (max-width: 56.25em) {
+    .form_account.form-nywd {
+      max-width: 650px; } }
+  .form_account.form-nywd div {
+    margin: 1.5% 1%; }
+    @media only screen and (max-width: 44em) {
+      .form_account.form-nywd div {
+        margin: 0 1% 20px 1%; } }
+    .form_account.form-nywd div .radio {
+      margin: 16px 0;
+      display: block;
+      cursor: pointer;
+      padding-left: 2px;
+      position: relative;
+      margin-right: 20px; }
+      .form_account.form-nywd div .radio span.name-radio {
+        position: relative;
+        top: 0px; }
+      .form_account.form-nywd div .radio input {
+        display: none; }
+        .form_account.form-nywd div .radio input + span {
+          line-height: 20px;
+          height: 20px;
+          padding-left: 20px;
+          display: block;
+          position: relative;
+          font-size: 1.4rem; }
+          .form_account.form-nywd div .radio input + span:not(:empty) {
+            padding-left: 28px; }
+          .form_account.form-nywd div .radio input + span:before, .form_account.form-nywd div .radio input + span:after {
+            content: '';
+            width: 20px;
+            height: 20px;
+            display: block;
+            border-radius: 50%;
+            left: 0;
+            top: 0;
+            position: absolute; }
+          .form_account.form-nywd div .radio input + span:before {
+            background: #333F48;
+            transition: background 0.2s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2); }
+          .form_account.form-nywd div .radio input + span:after {
+            background: #fff;
+            transform: scale(0.78);
+            transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4); }
+        .form_account.form-nywd div .radio input:checked + span:before {
+          transform: scale(1.04);
+          background: #333F48; }
+        .form_account.form-nywd div .radio input:checked + span:after {
+          transform: scale(0.4);
+          transition: transform .3s ease; }
+      .form_account.form-nywd div .radio:hover input + span:before {
+        transform: scale(0.92); }
+      .form_account.form-nywd div .radio:hover input + span:after {
+        transform: scale(0.74); }
+      .form_account.form-nywd div .radio:hover input:checked + span:after {
+        transform: scale(0.4); }
+  .form_account.form-nywd div.third {
+    width: 31%; }
+    @media only screen and (max-width: 56.25em) {
+      .form_account.form-nywd div.third {
+        width: 34%; } }
+    @media only screen and (max-width: 44em) {
+      .form_account.form-nywd div.third {
+        width: 100%; } }
+    .form_account.form-nywd div.third h4 {
+      width: 100%;
+      text-transform: uppercase;
+      font-family: "Roboto", sans-serif;
+      margin-bottom: 5px;
+      margin-top: 20px; }
+    .form_account.form-nywd div.third .radio {
+      display: inline-block;
+      width: auto; }
+  .form_account.form-nywd div.fourth {
+    width: 22.8%; }
+    @media only screen and (max-width: 44em) {
+      .form_account.form-nywd div.fourth {
+        width: 100%; } }
+  .form_account.form-nywd div.half {
+    width: 47.5%; }
+    @media only screen and (max-width: 44em) {
+      .form_account.form-nywd div.half {
+        width: 100%; } }
+  .form_account.form-nywd div.full {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; }
+    .form_account.form-nywd div.full h4, .form_account.form-nywd div.full h3 {
+      width: 100%;
+      text-transform: uppercase;
+      font-family: "Roboto", sans-serif;
+      margin-bottom: 5px;
+      margin-top: 20px; }
+    .form_account.form-nywd div.full.form-brand {
+      height: 145px;
+      overflow-y: scroll;
+      margin: 0; }
+      .form_account.form-nywd div.full.form-brand .main-accordion {
+        width: 33%;
+        height: auto;
+        overflow: visible; }
+        @media only screen and (max-width: 44em) {
+          .form_account.form-nywd div.full.form-brand .main-accordion {
+            width: 94%;
+            margin: 1.5% 1%; } }
+        .form_account.form-nywd div.full.form-brand .main-accordion div {
+          margin: 1.5% 1%; }
+
+
+    /*added .progress-value2 class on 24th feb*/
+#modal-container3 .modal-background .modal-delete-card.modal-feed .progress-value2 {  
+  animation: load 1s infinite forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #f2f2f2;
+  height: 30px;
+  width: 0; }
+
+
+ #modal-custom-container1    {
+  position: fixed;
+  display: none;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  opacity: 0;
+  visibility: hidden; }
+
+ #modal-custom-container31    {
+  position: fixed;
+  display: none;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  opacity: 0;
+  visibility: hidden; }
+
+
+ #modal-custom-containerPromoDaily    {
+  position: fixed;
+  display: none;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  opacity: 0;
+  visibility: hidden; }
+
+  #modal-custom-containerPromo    {
+  position: fixed;
+  display: none;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  opacity: 0;
+  visibility: hidden; }
+
+    #modal-custom-containerPromoDaily.three, 
+   #modal-custom-containerPromoDaily.three2,
+   #modal-custom-containerPromoDaily.open-modal, 
+   #modal-custom-containerPromoDaily.edit-card,
+  #modal-custom-containerPromo.three, 
+   #modal-custom-containerPromo.three2,
+   #modal-custom-containerPromo.open-modal, 
+   #modal-custom-containerPromo.edit-card, 
+    #modal-custom-container31.three, 
+   #modal-custom-container31.three2,
+   #modal-custom-container31.open-modal, 
+   #modal-custom-container31.edit-card, 
+   #modal-custom-container1.three, 
+   #modal-custom-container1.three2,
+   #modal-custom-container1.open-modal, 
+   #modal-custom-container1.edit-card 
+   {
+    z-index: 9999999;
+    visibility: visible;
+    opacity: 1;
+    display: table;
+    transition: all 0.3s; }
+
+     #modal-custom-containerPromoDaily.three .modal-background, 
+   #modal-custom-containerPromoDaily.three2 .modal-background, 
+   #modal-custom-containerPromoDaily.open-modal .modal-background, 
+   #modal-custom-containerPromoDaily.edit-card .modal-background,
+   #modal-custom-containerPromo.three .modal-background, 
+   #modal-custom-containerPromo.three2 .modal-background, 
+   #modal-custom-containerPromo.open-modal .modal-background, 
+   #modal-custom-containerPromo.edit-card .modal-background,
+    #modal-custom-container31.three .modal-background, 
+   #modal-custom-container31.three2 .modal-background, 
+   #modal-custom-container31.open-modal .modal-background, 
+   #modal-custom-container31.edit-card .modal-background, 
+   #modal-custom-container1.three .modal-background, 
+   #modal-custom-container1.three2 .modal-background, 
+   #modal-custom-container1.open-modal .modal-background, 
+   #modal-custom-container1.edit-card .modal-background 
+   {
+      background: rgba(0, 0, 0, 0.8);
+      visibility: visible; }
+
+   #modal-custom-containerPromoDaily.three .modal-background .modal, 
+   #modal-custom-containerPromoDaily.three2 .modal-background .modal, 
+   #modal-custom-containerPromoDaily.open-modal .modal-background .modal, 
+   #modal-custom-containerPromoDaily.edit-card .modal-background .modal,
+
+   #modal-custom-containerPromo.three .modal-background .modal, 
+   #modal-custom-containerPromo.three2 .modal-background .modal, 
+   #modal-custom-containerPromo.open-modal .modal-background .modal, 
+   #modal-custom-containerPromo.edit-card .modal-background .modal,
+   #modal-custom-container31.three .modal-background .modal, 
+   #modal-custom-container31.three2 .modal-background .modal, 
+   #modal-custom-container31.open-modal .modal-background .modal, 
+   #modal-custom-container31.edit-card .modal-background .modal, 
+   #modal-custom-container1.three .modal-background .modal, 
+   #modal-custom-container1.three2 .modal-background .modal, 
+   #modal-custom-container1.open-modal .modal-background .modal, 
+   #modal-custom-container1.edit-card .modal-background .modal 
+   {
+        animation: moveUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+
+   #modal-custom-containerPromoDaily.out,
+   #modal-custom-containerPromo.out,
+   #modal-custom-container31.out, 
+   #modal-custom-container1.out 
+   {
+    opacity: 0;
+    visibility: hidden; }
+
+   #modal-custom-containerPromoDaily.out .modal-background,
+   #modal-custom-containerPromo.out .modal-background,
+  #modal-custom-container31.out .modal-background, 
+  #modal-custom-container1.out .modal-background 
+  {
+      visibility: hidden; }
+
+   #modal-custom-containerPromoDaily.out .modal-background .modal,
+   #modal-custom-containerPromo.out .modal-background .modal,
+  #modal-custom-container31.out .modal-background .modal, 
+  #modal-custom-container1.out .modal-background .modal 
+  {
+        animation: moveDown 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+
+    #modal-custom-containerPromoDaily .modal-background, 
+   #modal-custom-containerPromo .modal-background, 
+  #modal-custom-container31 .modal-background, 
+  #modal-custom-container1 .modal-background 
+  {
+    display: table-cell;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    vertical-align: middle; }
+
+
+       #modal-custom-containerPromoDaily.modal-background a.close-modal, 
+ #modal-custom-containerPromoDaily .modal-background a.close-modalpop,
+ #modal-custom-containerPromoDaily .modal-background a.close-modal2, 
+ #modal-custom-containerPromoDaily .modal-background a.close-modal3, 
+ #modal-custom-containerPromoDaily .modal-background a.close-modalCustomPromoDaily,
+
+    #modal-custom-containerPromo.modal-background a.close-modal, 
+ #modal-custom-containerPromo .modal-background a.close-modalpop,
+ #modal-custom-containerPromo .modal-background a.close-modal2, 
+ #modal-custom-containerPromo .modal-background a.close-modal3, 
+ #modal-custom-containerPromo .modal-background a.close-modalCustomPromo,
+#modal-custom-container31.modal-background a.close-modal, 
+ #modal-custom-container31 .modal-background a.close-modalpop,
+ #modal-custom-container31 .modal-background a.close-modal2, 
+ #modal-custom-container31 .modal-background a.close-modal3, 
+ #modal-custom-container31 .modal-background a.close-modalCustom1, 
+ #modal-custom-container1.modal-background a.close-modal, 
+ #modal-custom-container1 .modal-background a.close-modal2, 
+ #modal-custom-container1 .modal-background a.close-modal3, 
+ #modal-custom-container1 .modal-background a.close-modalCustom1 
+ {
+      position: absolute;
+      right: 15px;
+      top: 20px;
+      padding: 20px;
+      z-index: 99999;
+      display: block; }
+
+      @media only screen and (max-width: 44em) {
+
+          #modal-custom-containerPromoDaily.modal-background a.close-modal, 
+ #modal-custom-containerPromoDaily .modal-background a.close-modalpop,
+ #modal-custom-containerPromoDaily .modal-background a.close-modal2, 
+ #modal-custom-containerPromoDaily .modal-background a.close-modal3, 
+ #modal-custom-containerPromoDaily .modal-background a.close-modalCustomPromoDaily,
+
+            #modal-custom-containerPromo.modal-background a.close-modal, 
+ #modal-custom-containerPromo .modal-background a.close-modalpop,
+ #modal-custom-containerPromo .modal-background a.close-modal2, 
+ #modal-custom-containerPromo .modal-background a.close-modal3, 
+ #modal-custom-containerPromo .modal-background a.close-modalCustomPromo,
+   #modal-custom-container31 .modal-background a.close-modal, 
+   #modal-custom-container31 .modal-background a.close-modalpop,
+   #modal-custom-container31.modal-background a.close-modal2, 
+   #modal-custom-container31 .modal-background a.close-modal3, 
+   #modal-custom-container31 .modal-background a.close-modalCustom1, 
+   #modal-custom-container1 .modal-background a.close-modal, 
+   #modal-custom-container1.modal-background a.close-modal2, 
+   #modal-custom-container1 .modal-background a.close-modal3, 
+   #modal-custom-container1 .modal-background a.close-modalCustom1 
+   {
+          top: 10px; } }
+
+          #modal-custom-containerPromoDaily .modal-background .modal,
+       #modal-custom-containerPromo .modal-background .modal,
+    #modal-custom-container31 .modal-background .modal,
+    #modal-custom-container1 .modal-background .modal 
+    {
+      background: white;
+      padding: 50px;
+      display: inline-block;
+      border-radius: 3px;
+      position: relative;
+      z-index: 9999; }
+
+              #modal-custom-containerPromoDaily .modal-background .modal.modal-card,
+        #modal-custom-containerPromo .modal-background .modal.modal-card,
+    #modal-custom-container31 .modal-background .modal.modal-card,
+    #modal-custom-container1 .modal-background .modal.modal-card 
+    {
+        background: transparent;
+        padding: 20px; }
+
+                 #modal-custom-containerPromoDaily .modal-background .modal-delete-card,
+         #modal-custom-containerPromo .modal-background .modal-delete-card,
+    #modal-custom-container31 .modal-background .modal-delete-card,
+    #modal-custom-container1 .modal-background .modal-delete-card 
+     {
+  padding: 0px 0px 30px 0;
+  border-radius: 12px;
+  overflow: hidden; }
+  @media only screen and (max-width: 44em) {
+        #modal-custom-containerPromoDaily .modal-background .modal-delete-card,
+      #modal-custom-containerPromo .modal-background .modal-delete-card,
+    #modal-custom-container31 .modal-background .modal-delete-card,
+    #modal-custom-container1 .modal-background .modal-delete-card 
+    {
+      width: 90%; } }
+
+   #modal-custom-containerPromoDaily .modal-background .modal-delete-card h3, 
+  #modal-custom-containerPromo .modal-background .modal-delete-card h3, 
+    #modal-custom-container31 .modal-background .modal-delete-card h3, 
+    #modal-custom-container1 .modal-background .modal-delete-card h3 
+    {
+    font-size: 2.8rem;
+    width: 100%;
+    background-color: #f3f3f3;
+    padding: 21px; }
+
+
+   #modal-custom-containerPromoDaily .modal-background .modal-delete-card p, 
+  #modal-custom-containerPromo .modal-background .modal-delete-card p, 
+   #modal-custom-container31 .modal-background .modal-delete-card p, 
+   #modal-custom-container1 .modal-background .modal-delete-card p   
+   {
+    font-size: 1.6rem;
+    padding: 20px 30px;
+    margin-bottom: 30px; }
+    
+    .content-section-main .summary select {font-size:1.6rem; width:95%; font-weight:bold}
+
+    .nav-shop .widget-menu .account ul.list-account {
+min-width:147px;
+}
+
+        .nav-shop .widget-menu .account ul.list-account li a {
+        padding-left: 12px !important;
+        }
+
+        .wrapper-search .search-bar .form1.search-ad {
+      display: flex;
+      position: relative; }
+      .wrapper-search .search-bar .form1.search-ad input[type=text] {
+        padding: 10px 20px;
+        font-size: 17px;
+        border: 1px solid #979797;
+        width: 100%;
+        height: 45px;
+        background: #f3f3f3;
+        border-radius: 11px;
+        font-family: "EB Garamond", serif; }
+      .wrapper-search .search-bar .form1.search-ad button {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        width: 25px;
+        height: 24px;
+        background-size: 90%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #f3f3f3;
+        background-image: url(../img/search-icon.svg);
+        border: none;
+        cursor: pointer; }
+        @media only screen and (max-width: 44em) {
+          .wrapper-search .search-bar .form1.search-ad button {
+            right: 10px;
+            top: 11px; } }
+
+
+        
+ #divmodal    {
+  position: fixed;
+  display: none;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  opacity: 0;
+  visibility: hidden; }
+
+   #divmodal.three, 
+   #modal-custom-container1.three2,
+   #modal-custom-container31.three2,
+    #modal-custom-containerPromo.three2,
+   #divmodal.open-modal, 
+   #divmodal.edit-card {
+    z-index: 9999999;
+    visibility: visible;
+    opacity: 1;
+    display: table;
+    transition: all 0.3s; }
+
+   #divmodal.three .modal-background, #divmodal.three2 .modal-background, #divmodal.open-modal .modal-background, #divmodal.edit-card .modal-background {
+      background: rgba(0, 0, 0, 0.8);
+      visibility: visible; }
+
+   #divmodal.three .modal-background .modal, #divmodal.three2 .modal-background .modal, #divmodal.open-modal .modal-background .modal, #divmodal.edit-card .modal-background .modal {
+        animation: moveUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+
+   #divmodal.out {
+    opacity: 0;
+    visibility: hidden; }
+
+  #divmodal.out .modal-background {
+      visibility: hidden; }
+
+  #divmodal.out .modal-background .modal {
+        animation: moveDown 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+
+  #divmodal .modal-background {
+    display: table-cell;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    vertical-align: middle; }
+
+ #divmodal.modal-background a.close-modal, #divmodal .modal-background a.close-modal2, #divmodal .modal-background a.close-modal3, #divmodal .modal-background a.close-modalCustom2 {
+      position: absolute;
+      right: 15px;
+      top: 20px;
+      padding: 20px;
+      z-index: 99999;
+      display: block; }
+
+      @media only screen and (max-width: 44em) {
+   #divmodal .modal-background a.close-modal, #divmodal.modal-background a.close-modal2, #divmodal .modal-background a.close-modal3, #divmodal .modal-background a.close-modalCustom2 {
+          top: 10px; } }
+
+    #divmodal .modal-background .modal {
+      background: white;
+      padding: 50px;
+      display: inline-block;
+      border-radius: 3px;
+      position: relative;
+      z-index: 9999; }
+    #divmodal .modal-background .modal.modal-card {
+        background: transparent;
+        padding: 20px; }
+
+     #divmodal .modal-background .modal-delete-card {
+  padding: 0px 0px 30px 0;
+  border-radius: 12px;
+  overflow: hidden; }
+  @media only screen and (max-width: 44em) {
+    #divmodal .modal-background .modal-delete-card {
+      width: 90%; } }
+    #divmodal .modal-background .modal-delete-card h3 {
+    font-size: 2.8rem;
+    width: 100%;
+    background-color: #f3f3f3;
+    padding: 21px; }
+   #divmodal .modal-background .modal-delete-card p {
+    font-size: 1.6rem;
+    padding: 20px 30px;
+    margin-bottom: 30px; }
+
+
+   
+ #modal-custom-kickoff    {
+  position: fixed;
+  display: none;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  opacity: 0;
+  visibility: hidden; }
+
+   #modal-custom-kickoff.three, #modal-custom-kickoff.three2,#modal-custom-kickoff.open-modal, #modal-custom-kickoff.edit-card {
+    z-index: 9999999;
+    visibility: visible;
+    opacity: 1;
+    display: table;
+    transition: all 0.3s; }
+
+   #modal-custom-kickoff.three .modal-background, #modal-custom-kickoff.three2 .modal-background, #modal-custom-kickoff.open-modal .modal-background, #modal-custom-kickoff.edit-card .modal-background {
+      background: rgba(0, 0, 0, 0.8);
+      visibility: visible; }
+
+   #modal-custom-kickoff.three .modal-background .modal, #modal-custom-kickoff.three2 .modal-background .modal, #modal-custom-kickoff.open-modal .modal-background .modal, #modal-custom-kickoff.edit-card .modal-background .modal {
+        animation: moveUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+
+   #modal-custom-kickoff.out {
+    opacity: 0;
+    visibility: hidden; }
+
+  #modal-custom-kickoff.out .modal-background {
+      visibility: hidden; }
+
+  #modal-custom-kickoff.out .modal-background .modal {
+        animation: moveDown 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+
+  #modal-custom-kickoff .modal-background {
+    display: table-cell;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    vertical-align: middle; }
+
+ #modal-custom-kickoff.modal-background a.close-modal, #modal-custom-kickoff .modal-background a.close-modal2, #modal-custom-kickoff .modal-background a.close-modal3, #modal-custom-kickoff .modal-background a.close-modalCustomkick {
+      position: absolute;
+      right: 15px;
+      top: 20px;
+      padding: 20px;
+      z-index: 99999;
+      display: block; }
+
+      @media only screen and (max-width: 44em) {
+   #modal-custom-kickoff .modal-background a.close-modal, #modal-custom-kickoff.modal-background a.close-modal2, #modal-custom-kickoff .modal-background a.close-modal3, #modal-custom-kickoff .modal-background a.close-modalCustomkick {
+          top: 10px; } }
+
+    #modal-custom-kickoff .modal-background .modal {
+      background: white;
+      padding: 50px;
+      display: inline-block;
+      border-radius: 3px;
+      position: relative;
+      z-index: 9999; }
+    #modal-custom-kickoff .modal-background .modal.modal-card {
+        background: transparent;
+        padding: 20px; }
+
+     #modal-custom-kickoff .modal-background .modal-delete-card {
+  padding: 0px 0px 30px 0;
+  border-radius: 12px;
+  overflow: hidden; }
+  @media only screen and (max-width: 44em) {
+    #modal-custom-kickoff .modal-background .modal-delete-card {
+      width: 90%; } }
+    #modal-custom-kickoff .modal-background .modal-delete-card h3 {
+    font-size: 2.8rem;
+    width: 100%;
+    background-color: #f3f3f3;
+    padding: 21px; }
+   #modal-custom-kickoff .modal-background .modal-delete-card p {
+    font-size: 1.6rem;
+    padding: 20px 30px;
+    margin-bottom: 30px; }
+
+    #modal-custom-container32,
+    #modal-custom-container2    {
+  position: fixed;
+  display: none;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  opacity: 0;
+  visibility: hidden; }
+
+    #modal-custom-container32.three, #modal-custom-container32.three2,#modal-custom-container32.open-modal, #modal-custom-container32.edit-card,
+   #modal-custom-container2.three, #modal-custom-container2.three2,#modal-custom-container2.open-modal, #modal-custom-container2.edit-card {
+    z-index: 9999999;
+    visibility: visible;
+    opacity: 1;
+    display: table;
+    transition: all 0.3s; }
+
+    #modal-custom-container32.three .modal-background, #modal-custom-container32.three2 .modal-background, #modal-custom-container32.open-modal .modal-background, #modal-custom-container32.edit-card .modal-background,
+   #modal-custom-container2.three .modal-background, #modal-custom-container2.three2 .modal-background, #modal-custom-container2.open-modal .modal-background, #modal-custom-container2.edit-card .modal-background {
+      background: rgba(0, 0, 0, 0.8);
+      visibility: visible; }
+
+    #modal-custom-container32.three .modal-background .modal, #modal-custom-container32.three2 .modal-background .modal, #modal-custom-container32.open-modal .modal-background .modal, #modal-custom-container32.edit-card .modal-background .modal,
+   #modal-custom-container2.three .modal-background .modal, #modal-custom-container2.three2 .modal-background .modal, #modal-custom-container2.open-modal .modal-background .modal, #modal-custom-container2.edit-card .modal-background .modal {
+        animation: moveUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+
+    #modal-custom-container32.out,
+   #modal-custom-container2.out {
+    opacity: 0;
+    visibility: hidden; }
+
+    #modal-custom-container32.out .modal-background,
+  #modal-custom-container2.out .modal-background {
+      visibility: hidden; }
+
+    #modal-custom-container32.out .modal-background .modal,
+  #modal-custom-container2.out .modal-background .modal {
+        animation: moveDown 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+
+     #modal-custom-container32 .modal-background,
+  #modal-custom-container2 .modal-background {
+    display: table-cell;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    vertical-align: middle; }
+
+     #modal-custom-container32 .modal-background a.close-modal3, #modal-custom-container32 .modal-background a.close-modalCustom32,
+ #modal-custom-container2.modal-background a.close-modal, #modal-custom-container2 .modal-background a.close-modal2, #modal-custom-container2 .modal-background a.close-modal3, #modal-custom-container2 .modal-background a.close-modalCustom3 {
+      position: absolute;
+      right: 15px;
+      top: 20px;
+      padding: 20px;
+      z-index: 99999;
+      display: block; }
+
+      @media only screen and (max-width: 44em) {
+  #modal-custom-container32 .modal-background a.close-modal3, #modal-custom-container32 .modal-background a.close-modalCustom32,
+   #modal-custom-container2 .modal-background a.close-modal, #modal-custom-container2.modal-background a.close-modal2, #modal-custom-container2 .modal-background a.close-modal3, #modal-custom-container2 .modal-background a.close-modalCustom3 {
+          top: 10px; } }
+
+      #modal-custom-container32 .modal-background .modal,
+    #modal-custom-container2 .modal-background .modal {
+      background: white;
+      padding: 50px;
+      display: inline-block;
+      border-radius: 8px;
+      position: relative;
+      z-index: 9999; }
+
+       #modal-custom-container32 .modal-background .modal.modal-card,
+    #modal-custom-container2 .modal-background .modal.modal-card {
+        background: transparent;
+        padding: 20px; }
+
+       #modal-custom-container32 .modal-background .modal-delete-card,
+     #modal-custom-container2 .modal-background .modal-delete-card {
+  padding: 0px 0px 30px 0;
+  border-radius: 12px;
+  overflow: hidden; }
+  @media only screen and (max-width: 44em) {
+      #modal-custom-container32 .modal-background .modal-delete-card,
+    #modal-custom-container2 .modal-background .modal-delete-card {
+      width: 90%; } }
+
+  #modal-custom-container32 .modal-background .modal-delete-card h3,
+    #modal-custom-container2 .modal-background .modal-delete-card h3 {
+    font-size: 2.8rem;
+    width: 100%;
+    background-color: #f3f3f3;
+    padding: 21px; }
+
+  #modal-custom-container32 .modal-background .modal-delete-card p,
+   #modal-custom-container2 .modal-background .modal-delete-card p {
+    font-size: 1.6rem;
+    padding: 20px 30px;
+    margin-bottom: 30px; }
+
+   #modal-custom-container32.three .modal-background .modal h3,
+  #modal-custom-container32 .modal-background .modal.modal-address h3
+   {
+    font-size: 2.8rem;
+    width: 100%;
+    background-color: #f3f3f3;
+    padding: 21px; }
+
+#modal-custom-container32.three .modal-background .modal form input,
+#modal-custom-container32.three .modal-background .modal form select,
+#modal-custom-container32 .modal-background .modal.modal-address form input,
+#modal-custom-container32 .modal-background .modal.modal-address form select {
+    font-family: "EB Garamond", serif;
+      border: 1px solid #333F48;
+      color: #333F48;
+      border-radius: 8px;
+      padding: 0 10px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 1.6rem;
+      display: inline-block;
+      width: 96%;
+      margin: 8px 5px;
+}
+
+#modal-custom-container32.three .modal-background .modal,
+#modal-custom-container32 .modal-background .modal.modal-address {
+  padding: 0px;
+  border-radius: 12px;
+  overflow: hidden; }
+   .main-list-shop .list-product-content .item-product .cart-price .cont-cart .btn.add-to-cart:before {
+            content: "" !important;
+            position: absolute;
+            background-color: #fff;
+            color: #333F48;
+            top: 0;
+            left: 0;
+            width: 0;
+            visibility: hidden;
+            overflow: hidden; }
